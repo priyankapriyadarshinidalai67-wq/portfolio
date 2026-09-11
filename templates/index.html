@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priyanka Priyadarshini Dalai — Portfolio</title>
+<meta name="description" content="Portfolio of Priyanka Priyadarshini Dalai, BTech AI &amp; Machine Learning student. Projects, skills, and education.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/style.css') }}">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="nav-name">Priyanka Dalai</div>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+      <a href="https://github.com/priyankapriyadarshinidalai67-wq" target="_blank" rel="noreferrer" class="nav-cta">GitHub</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">AI &amp; ML • BTech Student</div>
+        <h1>Priyanka <span class="accent">Priyadarshini Dalai</span></h1>
+        <p class="lede">I build calm, practical AI experiences that turn ideas into tools people can use. I explore machine learning, product thinking, and interface design with a strong focus on real-world impact.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View projects</a>
+          <a href="#contact" class="btn-secondary">Get in touch</a>
+        </div>
+        <ul class="quick-stats">
+          <li><strong>2+</strong><span>Years learning</span></li>
+          <li><strong>6+</strong><span>Projects built</span></li>
+          <li><strong>AI</strong><span>Focused</span></li>
+        </ul>
+      </div>
+
+      <div class="profile-card" aria-label="Profile photo">
+        <div class="profile-panel">
+          <div class="profile-photo-wrap">
+            <img src="{{ url_for('static', filename='assets/profile.jpeg') }}" alt="Priyanka Dalai" class="profile-photo" />
+          </div>
+          <div class="profile-meta">
+            <div>
+              <div class="section-kicker">Current focus</div>
+              <strong>Machine learning + product design</strong>
+            </div>
+            <span class="chip"><span class="dot"></span> Open to work</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shell about" id="about">
+    <div class="wrap section-header">
+      <div>
+        <span class="section-kicker">About</span>
+        <h2>Designing thoughtful AI.</h2>
+      </div>
+    </div>
+
+    <div class="wrap about-grid">
+      <div class="about-card">
+        <span class="section-kicker">Profile</span>
+        <p>Curious, experimental, and focused on building useful systems that blend intelligence with human experience.</p>
+      </div>
+
+      <div class="about-card">
+        <ul class="about-points">
+          <li>
+            <span class="point-icon">✦</span>
+            <div>
+              <strong>Problem-first thinking</strong>
+              <p>I enjoy learning the root problem before jumping into a solution, especially in AI and data-driven product spaces.</p>
+            </div>
+          </li>
+          <li>
+            <span class="point-icon">◎</span>
+            <div>
+              <strong>Hands-on building</strong>
+              <p>From predictive models to interfaces and dashboards, I like creating prototypes that feel real and are easy to understand.</p>
+            </div>
+          </li>
+          <li>
+            <span class="point-icon">▣</span>
+            <div>
+              <strong>Learning in public</strong>
+              <p>My work mixes research, experimentation, and iteration — all aimed at creating useful, engaging outcomes.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shell projects" id="projects">
+    <div class="wrap section-header">
+      <div>
+        <span class="section-kicker">Selected work</span>
+        <h2>Projects I’m building.</h2>
+      </div>
+    </div>
+
+    <div class="wrap projects-grid">
+      <article class="project-card">
+        <div class="project-emoji">📊</div>
+        <h3>Smart Resume Insight Dashboard</h3>
+        <p>A resume analysis tool that highlights strengths, skill gaps, and role-fit signals for candidates and recruiters.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Flask</span>
+          <span class="tag">React</span>
+        </div>
+        <div class="project-links">
+          <a href="#">Live demo</a>
+          <a href="#">Code</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-emoji">🧭</div>
+        <h3>AI Career Guidance App</h3>
+        <p>An interactive recommendation platform that maps skills, interests, and goals to career possibilities and learning paths.</p>
+        <div class="project-tags">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">TypeScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#">Live demo</a>
+          <a href="#">Code</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-emoji">📈</div>
+        <h3>Predictive Learning Analytics</h3>
+        <p>A machine learning system for understanding student performance patterns and forecasting improvement opportunities.</p>
+        <div class="project-tags">
+          <span class="tag">scikit-learn</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">SQL</span>
+          <span class="tag">React</span>
+        </div>
+        <div class="project-links">
+          <a href="#">Live demo</a>
+          <a href="#">Code</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-shell skills" id="skills">
+    <div class="wrap section-header">
+      <div>
+        <span class="section-kicker">Skills</span>
+        <h2>Tools I work with.</h2>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div id="reactStack" class="react-stack-widget" aria-live="polite"></div>
+    </div>
+
+    <div class="wrap skills-grid">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <div class="skill-pills">
+          <span class="pill">Python</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">React</span>
+          <span class="pill">C++</span>
+          <span class="pill">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>AI / ML</h3>
+        <div class="skill-pills">
+          <span class="pill">PyTorch</span>
+          <span class="pill">TensorFlow</span>
+          <span class="pill">scikit-learn</span>
+          <span class="pill">Pandas</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <div class="skill-pills">
+          <span class="pill">Git</span>
+          <span class="pill">Docker</span>
+          <span class="pill">Jupyter</span>
+          <span class="pill">Figma</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shell education" id="education">
+    <div class="wrap section-header">
+      <div>
+        <span class="section-kicker">Education</span>
+        <h2>Academic path.</h2>
+      </div>
+    </div>
+
+    <div class="wrap edu-card">
+      <div class="edu-row">
+        <div class="edu-degree">BTech in Artificial Intelligence &amp; Machine Learning</div>
+        <div class="edu-meta">GIET University • 2024–2028</div>
+      </div>
+      <div class="edu-notes">Relevant coursework includes Data Structures, Machine Learning, Deep Learning, Probability &amp; Statistics, and applied AI concepts. I enjoy combining classroom knowledge with hands-on experimentation and product-driven projects.</div>
+    </div>
+  </section>
+
+  <section class="section-shell contact" id="contact">
+    <div class="wrap contact-panel">
+      <h2>Let’s build something thoughtful and useful.</h2>
+      <div class="contact-links">
+        <button type="button" class="btn-primary" id="openContactForm">Email me</button>
+        <a href="https://github.com/priyankapriyadarshinidalai67-wq" target="_blank" rel="noreferrer" class="btn-secondary">GitHub</a>
+        <a href="https://www.linkedin.com/in/priyanka-priyadarshini-dalai-7b8699377/" target="_blank" rel="noreferrer" class="btn-secondary">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="wrap contact-form-wrap" id="contactFormWrap" style="display: none;">
+      <form id="contactForm" class="contact-form">
+        <label class="field">
+          <span>Your name</span>
+          <input type="text" name="name" placeholder="Enter your name" required>
+        </label>
+
+        <label class="field">
+          <span>Your email</span>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+
+        <label class="field full">
+          <span>Query topic</span>
+          <input type="text" name="subject" placeholder="Project inquiry, collaboration, or other" required>
+        </label>
+
+        <label class="field full">
+          <span>Query</span>
+          <input type="text" name="query" placeholder="Brief summary of your query">
+        </label>
+
+        <label class="field full">
+          <span>Your message</span>
+          <textarea name="message" placeholder="Tell me more about your project or idea..." required></textarea>
+        </label>
+
+        <div class="field full">
+          <button type="submit" class="btn-primary">Send message</button>
+        </div>
+      </form>
+      <div id="contactSuccess" class="success-message">Your message has been sent successfully.</div>
+      <div id="contactError" class="error-message">Something went wrong. Please try again.</div>
+    </div>
+  </section>
+
+  <section class="section-shell api" id="api">
+    <div class="wrap">
+      <div class="section-header">
+        <div>
+          <span class="section-kicker">API</span>
+          <h2>Live backend data.</h2>
+        </div>
+      </div>
+      <div class="api-panel">
+        <div id="apiStatus" class="api-status">Loading API status...</div>
+        <ul id="portfolioList" class="api-list"></ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Priyanka Priyadarshini Dalai</span>
+    <a href="#about">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="{{ url_for('static', filename='assets/app.js') }}"></script>
+</body>
+</html>
